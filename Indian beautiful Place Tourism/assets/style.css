@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kaushan Script", cursive;
+    line-height: 1.6;
+    color: #e322e0;
+    background-image:url(./img/colombo-sri-lanka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+
+/* Header and Navigation */
+header {
+   
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+   
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000%;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8df02;
+    padding: 1px;
+    align-content: flex-start;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    background-color: transparent;
+    padding: right 1px;
+    margin: 0;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #18e9ed;
+    background-color: darkorchid;
+    border-radius: 5px;
+    margin: 0 1rem;
+    padding: 0.2rem 1rem;
+    transition: background 0.3s;
+    
+    transition: color 0.5s;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+
+.nav-links li a:hover {
+    color: #e72517;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    backdrop-filter: blur(1px);
+  
+}
+
+.hero-content {
+    padding: 2rem;
+    color: #6bed7d;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+.heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+/* Destinations Section */
+.destinations {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destinations h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 5px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    
+
+}
+.destination-card img:hover {
+    transform: scale(1.05);
+}
+.destination-card h3 {
+    padding: 1rem;
+    color: #333;
+}
+
+
+.destination-card p {
+    padding: 1rem;
+    
+}
+
+/* Packages Section */
+
+
+.packages {
+    background: #f8f9fa;
+    padding: 5rem 5%;
+}
+
+.packages h2 {
+    text-align: center;
+    margin-bottom: 6rem;
+
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background: transparent
+    padding : 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    margin-bottom: 1rem;
+    font-weight:100px;
+    color: #333;    
+}
+
+.package-card ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.package-card li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+.packages {
+    padding: 5rem 5%;
+}
+
+.packages h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card p {
+    padding: 1rem;
+    color: #2b28d0;
+}
+
+.package-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border-radius: 10px 10px 0 0;
+}
+
+.package-card h3 {
+    padding: 1rem;
+    color: #cb0c0c;
+    font-weight: 100px;
+}
+
+
+
+.book-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+.package-card:hover .book-button {
+    background: #e73532;
+}
+
+
+.package-card .places {
+    padding: 0 1rem;
+    color: #666;
+}
+
+.package-card ul {
+    padding: 1rem 2rem;
+    list-style: disc;
+}
+
+.package-card .price {
+    padding: 1rem;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #f148e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+.book-btn:hover {
+    background: #59e732;
+}
+
+.book-button:hover {
+    background: #0056b3;
+    
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 3rem 5% 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 2px 0;
+}
+
+/*Picture  */
+
+body {
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ed1f83;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.gallery {
+    display: flexbox;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 10rem 5%;
+    max-width: 1500px;
+    
+    margin: 0 auto;
+}
+.gallery img {
+    width: 100%;
+    height: 800px;
+    padding: 2rem;
+   object-fit:scale-down;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* booking section */
+body {
+    background-color: #fff;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
